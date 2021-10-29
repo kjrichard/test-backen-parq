@@ -5,7 +5,7 @@ import { CreateDateColumn } from "typeorm";
 export class CreateUserDto {
     @ApiProperty({
 		required: false,
-		description: 'The negotiation identifier',
+		description: 'Nombre del usuario',
 	})
     @IsNotEmpty()
     @Length(4, 15)
@@ -14,7 +14,7 @@ export class CreateUserDto {
 
     @ApiProperty({
 		required: false,
-		description: 'The negotiation identifier',
+		description: 'Apellido del usuario',
 	})
     @IsNotEmpty()
     @Length(4, 15)
@@ -23,7 +23,7 @@ export class CreateUserDto {
 
     @ApiProperty({
 		required: false,
-		description: 'The negotiation identifier',
+		description: 'Direccion del usuario',
 	})
     @IsNotEmpty()
     @Length(4, 15)
@@ -32,7 +32,7 @@ export class CreateUserDto {
 
     @ApiProperty({
 		required: false,
-		description: 'The negotiation identifier',
+		description: 'Ciudad del usuario',
 	})
     @IsNotEmpty()
     @Length(4, 15)
@@ -41,13 +41,13 @@ export class CreateUserDto {
 
     @ApiProperty({
 		required: false,
-		description: 'The negotiation identifier',
+		description: 'Longitud',
 	})
-    length : string;
+    longitude : string;
 
     @ApiProperty({
 		required: false,
-		description: 'The negotiation identifier',
+		description: 'Lactitud',
 	})
     latitude : string;
     
